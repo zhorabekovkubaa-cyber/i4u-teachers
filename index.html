@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="i4U мұғалімдері — ҰБТ бойынша тәжірибе, нәтиже және әдіс.">
+<meta property="og:site_name" content="i4U">
+<meta property="og:title" content="Біздің мұғалімдеріміз — i4U">
+<meta property="og:description" content="ҰБТ мұғалімдерінің тәжірибесі, нәтижесі және философиясы.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="kk_KZ">
+<meta property="og:url" content="https://zhorabekovkubaa-cyber.github.io/i4u-teachers/">
+<meta property="og:image" content="https://zhorabekovkubaa-cyber.github.io/i4u-teachers/img/og.jpg">
+<meta property="og:image:secure_url" content="https://zhorabekovkubaa-cyber.github.io/i4u-teachers/img/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="i4U — Біздің мұғалімдеріміз">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Біздің мұғалімдеріміз — i4U">
+<meta name="twitter:description" content="ҰБТ мұғалімдерінің тәжірибесі, нәтижесі және философиясы.">
+<meta name="twitter:image" content="https://zhorabekovkubaa-cyber.github.io/i4u-teachers/img/og.jpg">
+<meta name="theme-color" content="#efeafc">
+<title>Біздің мұғалімдеріміз — i4U</title>
+<link rel="canonical" href="https://zhorabekovkubaa-cyber.github.io/i4u-teachers/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Manrope:wght@600;700;800&display=swap">
+<style>
+:root{
+  --bg:#efeafc; --bg2:#e4dbf8; --ink:#1a1230; --mute:#5b5270;
+  --orange:#ff7a1a; --orange2:#ff9a4d; --purple:#5b2bbd; --purple2:#7c4dff;
+  --card:#ffffffee; --line:#d9cff2;
+  --display:"Manrope",system-ui,sans-serif;
+  --script:"Caveat",cursive;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font-family:var(--display);font-weight:700;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+button{font:inherit}
+
+.deck{height:100%;overflow-y:auto;scroll-snap-type:y proximity;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+.s{min-height:100%;scroll-snap-align:start;scroll-snap-stop:normal;position:relative;display:flex;justify-content:center;
+   padding:max(14px,env(safe-area-inset-top)) 14px max(20px,env(safe-area-inset-bottom))}
+.s[data-teacher]{min-height:auto;padding-top:max(52px,calc(env(safe-area-inset-top) + 44px))}
+.in{width:100%;max-width:560px;position:relative;z-index:2}
+
+/* background ornaments */
+.bg-orn{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.orn{position:absolute;opacity:.18;animation:float 9s ease-in-out infinite}
+.orn.a{width:220px;top:-40px;left:50%;transform:translateX(-50%);animation-delay:0s}
+.orn.b{width:180px;top:28%;left:-70px;animation-delay:1.2s}
+.orn.c{width:200px;top:55%;right:-80px;animation-delay:2.1s}
+.orn.d{width:260px;bottom:-80px;left:50%;transform:translateX(-50%);opacity:.14;animation-delay:.6s}
+@keyframes float{0%,100%{translate:0 0}50%{translate:0 -14px}}
+.ring{position:absolute;border:2px dashed rgba(123,77,255,.18);border-radius:50%;
+  width:min(90vw,520px);aspect-ratio:1;left:50%;top:18%;transform:translateX(-50%);
+  animation:spin 48s linear infinite}
+@keyframes spin{to{transform:translateX(-50%) rotate(360deg)}}
+
+/* cover */
+.cover{text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;min-height:calc(100vh - 46px)}
+.logo-pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:13px;font-weight:800;color:var(--purple);letter-spacing:.04em;text-transform:uppercase;
+  animation:rise .8s cubic-bezier(.2,.8,.2,1) both}
+.logo-pill i{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--orange),var(--purple2));display:block}
+.cover h1{margin:0;font-size:clamp(42px,11vw,64px);line-height:1.02;font-weight:800;color:var(--orange);
+  text-shadow:0 10px 30px rgba(255,122,26,.25);animation:rise .9s .08s cubic-bezier(.2,.8,.2,1) both}
+.cover h1 span{display:block;color:var(--orange)}
+.cover p{margin:0;max-width:34ch;color:var(--mute);font-size:17px;line-height:1.45;animation:rise .9s .16s cubic-bezier(.2,.8,.2,1) both}
+.cta{margin-top:8px;border:0;border-radius:999px;padding:14px 22px;background:linear-gradient(135deg,var(--orange),#ff5a00);color:#fff;font-weight:800;cursor:pointer;
+  box-shadow:0 14px 28px rgba(255,122,26,.35);animation:rise .9s .24s cubic-bezier(.2,.8,.2,1) both;transition:transform .2s, box-shadow .2s}
+.cta:hover{transform:translateY(-2px);box-shadow:0 18px 34px rgba(255,122,26,.42)}
+.hint{font-size:13px;color:var(--mute);opacity:.8;animation:pulse 2.2s ease-in-out infinite}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes pulse{0%,100%{opacity:.55;transform:translateY(0)}50%{opacity:1;transform:translateY(4px)}}
+
+/* teacher card */
+.teacher{display:flex;flex-direction:column;gap:10px;padding-block:0 12px}
+.name{align-self:center;background:linear-gradient(135deg,var(--orange),#ff5a00);color:#fff;border-radius:999px;padding:8px 14px;font-size:clamp(13px,3.6vw,17px);font-weight:800;letter-spacing:.02em;text-align:center;max-width:100%;
+  box-shadow:0 10px 22px rgba(255,122,26,.28);opacity:0;transform:translateY(16px)}
+.role{text-align:center;color:var(--purple);font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;opacity:0;transform:translateY(12px);margin-top:-4px}
+.subjects{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;opacity:0;transform:translateY(12px)}
+.chip{background:#fff;border:1px solid var(--line);color:var(--purple);border-radius:999px;padding:5px 10px;font-size:11px;font-weight:800}
+
+/* photo + stats side-by-side on all sizes */
+.hero-row{display:grid;grid-template-columns:min(42%,168px) 1fr;gap:10px;align-items:stretch}
+.photo{border-radius:18px;overflow:hidden;background:#ddd;box-shadow:0 12px 28px rgba(50,20,100,.16);opacity:0;transform:scale(.96);aspect-ratio:3/4;align-self:stretch;min-height:0}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.s.on .photo img{transform:scale(1.03)}
+.stats{display:flex;flex-direction:column;gap:8px;opacity:0;transform:translateY(16px);min-width:0}
+.nums{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.num{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 8px 7px;min-width:0}
+.num strong{display:block;font-size:clamp(16px,4.5vw,22px);color:var(--orange);font-weight:800;line-height:1.05}
+.num span{font-size:10px;color:var(--mute);line-height:1.2;display:block;margin-top:2px}
+.uniq{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 10px;flex:1}
+.uniq b{display:block;font-size:11px;color:var(--purple);margin-bottom:2px}
+.uniq p{margin:0;font-size:12px;line-height:1.35;font-weight:600;color:var(--ink);
+  display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+
+.blocks{display:flex;flex-direction:column;gap:7px}
+.block{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 12px;opacity:0;transform:translateY(18px)}
+.block h3{margin:0 0 4px;font-size:13px;color:var(--purple)}
+.block p{margin:0;font-size:13px;line-height:1.4;color:var(--ink);font-weight:600}
+.quote{font-family:var(--script);font-size:clamp(22px,5.5vw,32px);line-height:1.15;color:var(--purple);text-align:center;padding:4px 4px 8px;opacity:0;transform:translateY(14px)}
+
+/* desktop: roomier */
+@media (min-width:640px){
+  .teacher{gap:14px}
+  .name{padding:10px 18px;font-size:18px}
+  .role{font-size:14px}
+  .chip{padding:7px 12px;font-size:13px}
+  .hero-row{grid-template-columns:1fr 1.05fr;gap:12px}
+  .photo{order:2;border-radius:22px;min-height:280px;box-shadow:0 18px 40px rgba(50,20,100,.18)}
+  .stats{order:1;gap:10px}
+  .nums{gap:10px}
+  .num{border-radius:14px;padding:10px 12px}
+  .num strong{font-size:22px}
+  .num span{font-size:12px}
+  .uniq{border-radius:18px;padding:12px 14px}
+  .uniq b{font-size:13px}
+  .uniq p{font-size:14px;line-height:1.4;-webkit-line-clamp:unset;display:block}
+  .block{border-radius:18px;padding:14px 15px}
+  .block h3{font-size:15px;margin-bottom:6px}
+  .block p{font-size:14.5px;line-height:1.45}
+  .deck{scroll-snap-type:y mandatory}
+  .s{scroll-snap-stop:always}
+  .s[data-teacher]{min-height:100%;padding-top:max(18px,env(safe-area-inset-top))}
+}
+
+/* reveal when section on */
+.s.on .name,.s.on .role,.s.on .subjects,.s.on .photo,.s.on .stats,.s.on .block,.s.on .quote{opacity:1;transform:none;transition:opacity .7s cubic-bezier(.2,.8,.2,1), transform .7s cubic-bezier(.2,.8,.2,1)}
+.s.on .role{transition-delay:.05s}
+.s.on .subjects{transition-delay:.1s}
+.s.on .photo{transition-delay:.08s}
+.s.on .stats{transition-delay:.14s}
+.s.on .block:nth-child(1){transition-delay:.18s}
+.s.on .block:nth-child(2){transition-delay:.24s}
+.s.on .block:nth-child(3){transition-delay:.3s}
+.s.on .block:nth-child(4){transition-delay:.36s}
+.s.on .block:nth-child(5){transition-delay:.42s}
+.s.on .quote{transition-delay:.48s}
+
+/* dots nav */
+.dots{position:fixed;right:max(10px,env(safe-area-inset-right));top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:8px;z-index:5}
+.dots a{width:9px;height:9px;border-radius:50%;background:rgba(91,43,189,.25);display:block;transition:transform .2s, background .2s}
+.dots a.on{background:var(--orange);transform:scale(1.35);box-shadow:0 0 0 4px rgba(255,122,26,.2)}
+.topbar{position:fixed;left:0;right:0;top:0;z-index:6;display:flex;justify-content:space-between;align-items:center;padding:10px 14px;pointer-events:none}
+.topbar .brand{pointer-events:auto;background:#ffffffd9;backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:999px;padding:7px 12px;font-size:12px;font-weight:800;color:var(--purple);text-decoration:none}
+.progress{pointer-events:none;height:3px;position:fixed;left:0;top:0;right:0;z-index:7;background:transparent}
+.progress > i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--orange),var(--purple2));transition:width .15s linear}
+
+.end{text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;min-height:calc(100vh - 46px)}
+.end h2{margin:0;font-size:clamp(28px,7vw,40px);color:var(--purple);line-height:1.1}
+.end p{margin:0;color:var(--mute);max-width:34ch}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"><i></i></div>
+<div class="topbar"><a class="brand" href="#cover">i4U · Мұғалімдер</a></div>
+<div class="bg-orn" aria-hidden="true">
+  <div class="ring"></div>
+  <svg class="orn a" viewBox="0 0 200 120" fill="#5b2bbd"><path d="M100 10c-18 22-38 30-58 28 14 18 18 38 10 62 24-10 42-6 58 12 16-18 34-22 58-12-8-24-4-44 10-62-20 2-40-6-58-28z"/></svg>
+  <svg class="orn b" viewBox="0 0 200 120" fill="#7c4dff"><path d="M100 10c-18 22-38 30-58 28 14 18 18 38 10 62 24-10 42-6 58 12 16-18 34-22 58-12-8-24-4-44 10-62-20 2-40-6-58-28z"/></svg>
+  <svg class="orn c" viewBox="0 0 200 120" fill="#5b2bbd"><path d="M100 10c-18 22-38 30-58 28 14 18 18 38 10 62 24-10 42-6 58 12 16-18 34-22 58-12-8-24-4-44 10-62-20 2-40-6-58-28z"/></svg>
+  <svg class="orn d" viewBox="0 0 200 120" fill="#7c4dff"><path d="M100 10c-18 22-38 30-58 28 14 18 18 38 10 62 24-10 42-6 58 12 16-18 34-22 58-12-8-24-4-44 10-62-20 2-40-6-58-28z"/></svg>
+</div>
+
+<nav class="dots" id="dots" aria-label="Беттер"></nav>
+
+<div class="deck" id="deck">
+
+<section class="s on" id="cover"><div class="in">
+  <div class="cover">
+    <div class="logo-pill"><i></i> i4U ұстаздар құрамы</div>
+    <h1>БІЗДІҢ<br><span>МҰҒАЛІМДЕРІМІЗ</span></h1>
+    <p>ҰБТ бойынша тәжірибе, нәтиже және әр мұғалімнің өз әдісі — бір жерде.</p>
+    <button class="cta" type="button" id="startBtn">Мұғалімдерді қарау</button>
+    <div class="hint">Төмен сырғытыңыз ↓</div>
+  </div>
+</div></section>
+
+<!-- teachers injected -->
+<section class="s end" id="end"><div class="in">
+  <div class="end">
+    <div class="logo-pill"><i></i> i4U</div>
+    <h2>Дұрыс ұстаз — дұрыс нәтиже</h2>
+    <p>Әр мұғалім оқушыны жаттатпай, түсіндіріп, нәтижеге жеткізеді.</p>
+    <button class="cta" type="button" id="againBtn">Басынан қарау</button>
+  </div>
+</div></section>
+
+</div>
+
+<script>
+const TEACHERS = [
+  {
+    id:"kulmetov", name:"КУЛМЕТОВ САРУАР", subjects:["ГЕОГРАФИЯ"],
+    years:15, students:5000, max:134, avg:118,
+    uniq:"Білім мен харизманы ұштастырған, шәкірттің жүрегіне жол таба білетін жаңа заманның ұстазы.",
+    method:"Терең білім + Харизма + Интерактивті оқыту = 100% нәтиже.",
+    mistake:"Ақпаратты тек тыңдап, оны өмірде немесе есепте пайдалана алмау. Фокус — теорияны дағдыға айналдыру.",
+    lifehack:"«Қарапайым тіл» принципі: қиын терминді өмірлік ассоциациялармен түсіндіреді. Әр сабақ визуалды жадыны іске қосады.",
+    short:"Тек ең қажетті тақырыптарды іріктеу, уақытты үнемдейтін алгоритмдер мен авторлық тесттер.",
+    philos:"«Түсінбейтін оқушы болмайды». Басты мақсат — жаттату емес, пәнді сүйдіру және қолдана білуге үйрету.",
+    quote:"Тұрақтылық — таланттан да мықты.",
+    unis:"Nazarbayev University, Astana IT University, ҚБТУ, Satbayev University, ҚазҰУ, SDU, МУИТ, TUM, Politecnico di Milano, KAIST…"
+  },
+  {
+    id:"sakenova", name:"САКЕНОВА АҚЖАН", subjects:["МАТЕМАТИКА","МАТЕМАТИКАЛЫҚ САУАТТЫЛЫҚ"],
+    years:9, students:7000, max:137, avg:119,
+    uniq:"Күрделі есептерді қарапайым алгоритмге бөліп, қадам-қадаммен түсіндіреді. Формуланы жаттатудан гөрі, шешу логикасын қалыптастырады.",
+    method:"Ең жиі шығатын есеп түрлерін іріктеп, сериямен практика жасау.",
+    mistake:"Формуланы жаттап алып, есептің шартын толық талдамау және қадамдық шешім жасамау.",
+    lifehack:"Ең жиі шығатын есеп түрлерін іріктеп, соларды сериямен практика жасау.",
+    short:"Математика — жаттау емес, ойлау жүйесі. Дұрыс әдіс — дұрыс жауапқа әкеледі.",
+    philos:"Логиканы түсінген оқушы кез келген есептің шешімін өзі таба алады.",
+    quote:"Күн сайын есеп шығарып үйренген оқушы емтиханда сенімді нәтиже көрсетеді."
+  },
+  {
+    id:"tolganai", name:"ТОЛҒАНАЙ ҚАБДЫҚАЛЫҚ", subjects:["ҚАЗАҚ ТІЛІ","ҚАЗАҚ ӘДЕБИЕТІ"],
+    years:7, students:4800, max:132, avg:101,
+    uniq:"Оқушыны сауатты сөйлеуге және дұрыс жазуға үйретеді. Әдебиет арқылы ойлау мен талдау қабілетін дамытады.",
+    method:"Әр тақырыпты мысалмен түсіндіру, салыстыру және қысқа схема арқылы бекіту.",
+    mistake:"Қатені тек көрсету емес — неден шыққанын түсіндіріп, дұрыс жолын үйрету.",
+    lifehack:"Қиын тұстарды қарапайым тілмен тарқатып беру.",
+    short:"Ең жиі шығатын тапсырмаларға басымдық: қайталау + тест + талдау.",
+    philos:"Білім — тек ақпарат емес, оны қолдана алу дағдысы.",
+    quote:"Қате — әлсіздік емес, ол дұрыс жауапқа апаратын баспалдақ."
+  },
+  {
+    id:"elnura", name:"ЭЛЬНУРА АМАНОВА", subjects:["ХИМИЯ"],
+    years:8, students:4500, max:132, avg:114,
+    uniq:"Күрделі химия тақырыптарын қарапайым тілмен түсіндіріп, формула мен есептің логикасын ұғындырады.",
+    method:"Химияны формула емес, процесс ретінде түсіндіру: схема, кесте және өмірлік мысалдар.",
+    mistake:"Реакция теңдеулерін жаттап алып, заттардың қасиетін талдамау.",
+    lifehack:"Схема мен өмірлік мысалдар — тез есте сақтауға көмектеседі.",
+    short:"Жиі шығатын реакциялар мен есеп түрлеріне фокус: практика + тест + қате талдау.",
+    philos:"Химия — жаттау емес, байланыстарды түсіну.",
+    quote:"Химияны түсінген адам — өмірдегі құбылыстарды да тереңірек түсінеді."
+  },
+  {
+    id:"zhangeldi", name:"ЖАНГЕЛДІ БАЙЫШ", subjects:["ИНФОРМАТИКА"],
+    years:4, students:3000, max:129, avg:112,
+    uniq:"Теорияны практикамен ұштастырып, оқушыны емтиханға жүйелі түрде дайындайды. Алгоритмдік ойлауды қалыптастырады.",
+    method:"Программалауды визуализация арқылы (схема, кесте) меңгерту.",
+    mistake:"Кодты мағынасыз жаттап алу. Әр команданың логикасын ұғындыру маңызды.",
+    lifehack:"Схема мен кесте — тақырыпты тез әрі ұзақ есте сақтауға көмектеседі.",
+    short:"Тестте жиі келетін есептерге фокус: практика + логикалық талдау.",
+    philos:"Информатика — бұл жүйелі ойлау. Логиканы түсінген оқушы кез келген есепті шеше алады.",
+    quote:"Логиканы түсінген оқушы кез келген есепті шеше алады."
+  },
+  {
+    id:"aidos", name:"АЙДОС ПОЛАТБЕКҰЛЫ", subjects:["ФИЗИКА"],
+    years:4, students:3000, max:131, avg:113,
+    uniq:"Күрделі тақырыптарды қарапайым тілмен жеткізіп, физиканы түсінікті әрі қызықты етеді.",
+    method:"Тақырыпты мысал, схема және қарапайым тілмен түсіндіру.",
+    mistake:"Формуланы жаттап, есеп шартын толық талдамау.",
+    lifehack:"Мысал + схема — тез меңгеруге көмектеседі.",
+    short:"Жиі шығатын есептерге фокус: қайталау + тест + қате талдау.",
+    philos:"Физика — жаттау емес, түсіну. Түсінген оқушы нәтижеге жетеді.",
+    quote:"Нәтижеге бағытталған дайындық — жоғары баллдың кепілі."
+  },
+  {
+    id:"ulykbek", name:"ҰЛЫҚБЕК ТОҚТАРОВ", subjects:["БИОЛОГИЯ"],
+    years:10, students:7000, max:134, avg:116,
+    uniq:"Цитология, генетика, анатомияны қарапайым тілмен түсіндіріп, пәнге қызығушылық оятады.",
+    method:"Анимациялық бейне, ассоциация және интерактивті схемалар арқылы түсіндіру.",
+    mistake:"Биологияны жай жаттау керек деп түсіну және терминдердің мағынасына үңілмеу.",
+    lifehack:"Ассоциация мен схема — күрделі терминдерді тез меңгеруге көмектеседі.",
+    short:"ҰБТ-да жиі келетін сұрақтар мен контекстік тапсырмаларға фокус.",
+    philos:"Биология — жаттау емес, өмірді тану.",
+    quote:"Нәтижеге бағытталған дайындық — жоғары баллдың кепілі."
+  },
+  {
+    id:"ernar", name:"ЕРНАР ТАЛҒАТҰЛЫ", subjects:["ҚАЗАҚСТАН ТАРИХЫ","ДҮНИЕ ЖҮЗІ ТАРИХЫ"],
+    years:10, students:7000, max:137, avg:119,
+    uniq:"Тарихты өзара байланыстырып, түсінікті жүйемен үйретеді. Әр тақырып бірден ҰБТ форматында бекітіледі.",
+    method:"Сабақты мағынасына қарай бөліп оқу, негізгі сөздерді белгілеу және түйін шығару.",
+    mistake:"Сабақты толық түсінбей оқу, сұрақтың негізгі талабын елемеу.",
+    lifehack:"Сұрақты талдап, нақты дәлелге сүйеніп жауап табуға бағыттау.",
+    short:"Жиі кездесетін тақырыптармен жұмыс және әр қате сұрақты міндетті түрде талдау.",
+    philos:"Оқушыларды ойлай білетін, өз халқы мен әлемін түсінетін тұлға ретінде қалыптастыру.",
+    quote:"Қиындық — тек жеңістің қадамы."
+  },
+  {
+    id:"bekbolat", name:"БЕКБОЛАТ НАРЫНБАЙҰЛЫ", subjects:["ҚҰҚЫҚ НЕГІЗДЕРІ"],
+    years:6, students:4000, max:134, avg:121,
+    uniq:"Құқық пәнін ҰБТ форматына сай жүйелі, құрылымды түрде түсіндіреді. Тақырыптарды қысқа блоктарға бөледі.",
+    method:"Хронологиялық тізбек пен логикалық схема, салыстыру және қысқа тестпен бекіту.",
+    mistake:"Терминдерді жаттап алып, себеп-салдар байланысын түсінбеу.",
+    lifehack:"Терминдерді нақты мысалмен байланыстырып беру.",
+    short:"Ең жиі келетін ұғымдарды блок-блокпен қайталау және тест арқылы бекіту.",
+    philos:"Құқық — жай жаттау емес, логикамен түсінетін пән.",
+    quote:"Күн сайынғы жүйелі дайындық — жоғары нәтижеге жеткізетін басты күш."
+  },
+  {
+    id:"ayazhan", name:"АЯЖАН БАҚЫТЖАНҚЫЗЫ", subjects:["АҒЫЛШЫН"],
+    years:5, students:2000, max:129, avg:112,
+    uniq:"Грамматиканы қарапайым тілмен түсіндіріп, бірден сөйлеу мен тест практикасымен бекітеді. Әр оқушыға жеке стратегия құрады.",
+    method:"Ережені формула мен үлгі сөйлем арқылы беру, жаңа сөздерді бірден контексте қолдандыру.",
+    mistake:"Грамматиканы жаттап алып, сөйлемде дұрыс қолданбау; сөздік қорды дамытпау.",
+    lifehack:"Әр тақырыпты қысқа жаттығу мен тестпен бірден бекіту.",
+    short:"Жиі шығатын грамматика мен сөздікке фокус, күнделікті мини-план.",
+    philos:"Ағылшын тілі жатталатын пән емес, қолданылатын дағды.",
+    quote:"Күнделікті әрекет — үлкен жеңіс әкеледі.",
+    unis:"Назарбаев Университеті, ҚБТУ, SDU, Astana IT University, ҚазҰУ, ЕҰУ, KIMEP…"
+  }
+];
+
+const deck = document.getElementById("deck");
+const end = document.getElementById("end");
+
+function teacherHTML(t){
+  const chips = t.subjects.map(s=>`<span class="chip">${s}</span>`).join("");
+  const uni = t.unis ? `<div class="block"><h3>Оқушылары түскен ЖОО</h3><p>${t.unis}</p></div>` : "";
+  return `<section class="s" id="${t.id}" data-teacher="${t.id}"><div class="in">
+    <article class="teacher">
+      <div class="name">${t.name}</div>
+      <div class="role">Мұғалім · ҰБТ</div>
+      <div class="subjects">${chips}</div>
+      <div class="hero-row">
+        <div class="photo"><img src="./img/${t.id}.jpg" alt="${t.name}" decoding="async"></div>
+        <div class="stats">
+          <div class="nums">
+            <div class="num"><strong data-count="${t.years}">0</strong><span>жыл тәжірибе</span></div>
+            <div class="num"><strong data-count="${t.students}" data-suffix="+">0</strong><span>оқушы</span></div>
+            <div class="num"><strong data-count="${t.max}">0</strong><span>ең жоғары балл</span></div>
+            <div class="num"><strong data-count="${t.avg}" data-prefix="≈ ">0</strong><span>орташа балл</span></div>
+          </div>
+          <div class="uniq"><b>Ерекшелігі</b><p>${t.uniq}</p></div>
+        </div>
+      </div>
+      <div class="blocks">
+        <div class="block"><h3>Авторлық әдіс / лайфхак</h3><p>${t.lifehack}</p></div>
+        <div class="block"><h3>Жиі кездесетін қате</h3><p>${t.mistake}</p></div>
+        <div class="block"><h3>Қысқа уақытта дайындық</h3><p>${t.short}</p></div>
+        <div class="block"><h3>Мұғалім философиясы</h3><p>${t.philos}</p></div>
+        ${uni}
+      </div>
+      <div class="quote">«${t.quote}»</div>
+    </article>
+  </div></section>`;
+}
+
+TEACHERS.forEach(t => end.insertAdjacentHTML("beforebegin", teacherHTML(t)));
+
+const sections = [...deck.querySelectorAll(".s")];
+const dots = document.getElementById("dots");
+sections.forEach((s,i)=>{
+  const a=document.createElement("a");
+  a.href="#"+ (s.id||i);
+  a.title = s.id || ("бөлім "+(i+1));
+  a.addEventListener("click", e=>{ e.preventDefault(); s.scrollIntoView({behavior:"smooth"}); });
+  dots.appendChild(a);
+});
+const dotAs = [...dots.children];
+
+function animateCount(el){
+  if(el.dataset.done) return;
+  el.dataset.done="1";
+  const target = +el.dataset.count;
+  const suffix = el.dataset.suffix || "";
+  const prefix = el.dataset.prefix || "";
+  const start = performance.now();
+  const dur = 900;
+  const tick = (now)=>{
+    const p = Math.min(1, (now-start)/dur);
+    const eased = 1-Math.pow(1-p,3);
+    const val = Math.round(target*eased);
+    el.textContent = prefix + val.toLocaleString("kk-KZ") + suffix;
+    if(p<1) requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+}
+
+function update(){
+  const mid = deck.scrollTop + deck.clientHeight*0.35;
+  let best=0, bd=1e9;
+  sections.forEach((s,i)=>{
+    const top = s.offsetTop;
+    const d = Math.abs(top - deck.scrollTop);
+    if(d<bd){bd=d;best=i;}
+    const on = mid >= top && mid < top + s.offsetHeight;
+    if(on || d < deck.clientHeight*0.45){
+      if(!s.classList.contains("on")){
+        s.classList.add("on");
+        s.querySelectorAll("[data-count]").forEach(animateCount);
+      }
+    }
+  });
+  dotAs.forEach((a,i)=>a.classList.toggle("on", i===best));
+  const max = deck.scrollHeight - deck.clientHeight;
+  const pct = max>0 ? (deck.scrollTop/max)*100 : 0;
+  document.querySelector("#progress > i").style.width = pct + "%";
+}
+
+deck.addEventListener("scroll", ()=>requestAnimationFrame(update), {passive:true});
+update();
+
+document.getElementById("startBtn").onclick = ()=> sections[1]?.scrollIntoView({behavior:"smooth"});
+document.getElementById("againBtn").onclick = ()=> sections[0]?.scrollIntoView({behavior:"smooth"});
+
+document.addEventListener("keydown", (e)=>{
+  const cur = dotAs.findIndex(a=>a.classList.contains("on"));
+  if(e.key==="ArrowDown"||e.key==="PageDown"){ e.preventDefault(); sections[cur+1]?.scrollIntoView({behavior:"smooth"}); }
+  if(e.key==="ArrowUp"||e.key==="PageUp"){ e.preventDefault(); sections[cur-1]?.scrollIntoView({behavior:"smooth"}); }
+});
+</script>
+</body>
+</html>
